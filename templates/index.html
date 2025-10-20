@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="container">
+    <header>
+      <div class="brand">        
+        <div>
+          <h1>Saad ur Rehman Pasha</h1>
+          <p>Java & Python Developer • OOP enthusiast</p>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <div class="left">
+        <section class="hero">
+          <div class="avatar" aria-hidden="true"></div>
+          <div class="intro">
+            <h2>Assalamualaikum — I'm Saad ur Rehman Pasha</h2>
+            <p class="muted">University student & aspiring Java/Python developer. I build clean, OOP-based apps and small useful tools.</p>
+
+            <div class="cta">
+              <a class="btn" href="#projects">See Projects</a>
+              <a class="btn secondary" href="#contact">Hire / Contact</a>
+            </div>
+          </div>
+        </section>
+
+        <section id="about" class="card">
+          <h3>About me</h3>
+          <p class="muted">I'm a 2nd year Software Engineering student at Sir Syed University of Engineering and Technology, focused on Java, Python, Frontend, and OOP. I enjoy building lightweight apps that solve real problems and learning new tools.</p>
+          <ul style="margin-top:12px;color:var(--muted);">
+            <li>📍 Location: Karachi, Pakistan</li>
+            <li>🎓 University: SSUET university</li>
+            <li>💼 Looking for: Internship / Part-time projects</li>
+          </ul>
+        </section>
+        <section id="projects" class="card">
+          <h3>Projects</h3>
+          <div class="projects">
+            <article class="project">
+              <h4>Bank Account </h4>
+              <p class="muted">A simple OOP-based Android app in Java: create accounts, deposit, withdraw and view balance. Uses local storage (txt).</p>
+              <div class="tags">
+                <span class="tag">Java</span>
+                <span class="tag">OOP</span>                
+              </div>
+            </article>
+            <article class="project">
+      <h4>Novida Chatbot</h4>
+  <p class="muted">
+    Novida is an interactive chatbot built with Python’s Tkinter GUI and pyttsx3 Text-to-Speech. It can respond to user queries, speak answers, and optionally fetch Wikipedia summaries. Ideal for learning chatbot development and GUI programming.
+  </p>
+  <ul class="muted" style="margin-top:10px;">
+    <li>💬 Interactive chatbot with predefined responses</li>
+    <li>🗣️ Text-to-Speech using <code>pyttsx3</code></li>
+    <li>🧠 Optional Wikipedia search integration</li>
+    <li>🪟 GUI made with <code>Tkinter</code></li>
+  </ul>
+  <div class="tags" style="margin-top:8px;">
+    <span class="tag">Python</span>
+    <span class="tag">Tkinter</span>
+    <span class="tag">pyttsx3</span>    
+  </div>
+  <div class="cta" style="margin-top:10px;">
+    <a href="https://github.com/saadpasha123/Novida" target="_blank" class="btn secondary">View on GitHub</a>
+  </div>
+</article>
+            <article class="project">
+              <h4>Portfolio Website</h4>
+              <p class="muted">This single-file portfolio HTML + CSS — easy to host on GitHub Pages or Netlify.</p>
+              <div class="tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">Responsive</span>
+              </div>
+            </article>
+            <article class="project">
+  <h4>Online Examination System</h4>
+  <p class="muted">
+    A console-based Online Examination System built using Java. Users can log in, update profiles, answer MCQs, and the exam auto-submits when the timer expires.
+  </p>
+  <ul class="muted" style="margin-top:10px;">
+    <li>🔑 Login & User Authentication username/password</li>
+    <li>📝 Update Profile & Password anytime after login</li>
+    <li>❓ MCQ Selection – Choose answers for multiple questions</li>
+    <li>⏱️ Timer & Auto-Submit – Automatic submission after fixed duration</li>
+    <li>🔒 Secure Logout System after exam completion</li>
+  </ul>
+  <p class="muted" style="margin-top:8px;">
+    Concepts used: Abstract Class (User), Interface (ExamActions), Polymorphism, Final/Default/Static Methods
+  </p>
+  <div class="tags" style="margin-top:8px;">
+    <span class="tag">Java</span>
+    <span class="tag">OOP</span>
+    <span class="tag">Polymorphism</span>
+    <span class="tag">Abstraction</span>
+  </div>
+  <div class="cta" style="margin-top:10px;">
+    <a href="https://github.com/saadpasha123/OIBSIP/tree/main/OIBSIP_java_Task2" target="_blank" class="btn secondary">View on GitHub</a>
+  </div>
+</article>
+</div>
+</section>
+      </div>
+      <aside class="right">
+        <section id="skills" class="card small">
+          <h3>Skills</h3>
+          <div class="skill"><strong>Java</strong><div class="bar" title="70%"><i style="width:80%"></i></div></div>
+          <div class="skill"><strong>Python</strong><div class="bar" title="80%"><i style="width:70%"></i></div></div>
+          <div class="skill"><strong>HTML & CSS</strong><div class="bar" title="85%"><i style="width:85%"></i></div></div>
+        </section>
+        <section id="contact" class="card small">
+          <h3>Contact</h3>
+          <p class="muted">Want to collaborate? Send a message — I usually reply within 24–48 hours.</p>
+          <form id="contactForm">
+            <label for="name">Name</label>
+            <input id="name" name="name" placeholder="Your name" required>
+
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" placeholder="you@example.com" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell me about your project..." required></textarea>
+            <div style="margin-top:10px;display:flex;gap:8px">
+              <button class="btn" type="submit">Send Message</button>
+              <a class="btn secondary" href="mailto:pashasaad219@gmail.com">Email Me</a>
+            </div>
+          </form>
+        </section>
+        <section class="card small">
+          <h3>Quick Links</h3>
+          <p class="muted">Replace with real links.</p>
+          <p style="margin:8px 0"><a href="#projects">Projects</a> • <a href="#contact">Contact</a></p>
+        </section>
+      </aside>
+    </main>
+    <footer>
+      <div class="muted">© <span id="year"></span> Saad ur Rehman Pasha — Built with ♥ using HTML & CSS</div>
+      <div class="muted">Made for university projects & portfolio</div>
+    </footer>
+  </div>
+  <script src="index.js">
+  </script>
+</body>
+</html>
